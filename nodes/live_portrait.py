@@ -158,6 +158,8 @@ class CropConfig:
 
 
 liveportrait_model=get_model_dir('liveportrait')
+if os.path.exists('/stable-diffusion-cache/models/liveportrait'):
+    liveportrait_model = '/stable-diffusion-cache/models/liveportrait'
 insightface_pretrained_weights=get_model_dir('insightface')
 
 landmark_runner_ckpt=os.path.join(liveportrait_model,'landmark.onnx')
