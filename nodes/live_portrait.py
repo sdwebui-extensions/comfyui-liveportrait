@@ -1,6 +1,5 @@
 import os
 import sys
-import folder_paths
 import numpy as np
 import torch
 from PIL import Image

@@ -6,7 +6,6 @@ import cv2
 from PIL import Image
 import folder_paths
 import copy,json
-from ultralytics import YOLO
 from scipy.interpolate import CubicSpline
 
 
@@ -193,6 +192,7 @@ class LP_Engine:
     mask_img = None
 
     def detect_face(self, image_rgb):
+        from ultralytics import YOLO
 
         crop_factor = 1.7
         bbox_drop_size = 10
